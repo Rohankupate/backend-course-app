@@ -13,7 +13,7 @@ app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
 app.get("/" , (req , res)=>{
-    res.json({msg : "welcome to backend"})
+    res.json({msg : "welcome to backend,i am here"})
 })
 
 try {
