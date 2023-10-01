@@ -15,9 +15,7 @@ app.use("/user", userRouter)
 app.get("/" , (req , res)=>{
     res.json({msg : "welcome to backend"})
 })
-// Connect to MongoDB
-// DONT MISUSE THIS THANKYOU!!
-// mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
+
 try {
     mongoose.connect('mongodb+srv://admin:ctrl4545@cluster0.0tn1hlx.mongodb.net/Courses', {
         
